@@ -1,4 +1,3 @@
-<!doctype html>
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Vault15 by t3loki</title>
 
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,6 +30,19 @@
       <section>
         <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<!-- форма для сбора интересных ссылок -->
+<div class="ba4ok">
+  <form>
+  	<label><strong>Description:</strong></label>
+  	 <input type="text" name="link_desc" id="link_desc"><br/>
+	
+	<label><strong>Link:</strong></label> 
+	<input type="text" name="link" id="linkPath">
+
+	<input type="submit" name="submit" value="Добавить" onclick="addLink()">
+  </form>
+</div>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
@@ -64,6 +78,10 @@ $ git checkout gh-pages
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+    
+    <script src="scripts/scale.fix.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     
   </body>
 </html>
