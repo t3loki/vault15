@@ -104,7 +104,7 @@ $ git checkout gh-pages
   $('#superBtn').click(function(){
       $grabLinkEater = $('#linkEater').val();
       //$('section').prepend('<h1>I\'m a paragraph!</h1>')
-       $('section').prepend($grabLinkEater + "<br/>");
+       $('section').prepend('<p>' + $grabLinkEater + '</p>');
   });
 </script>
 
