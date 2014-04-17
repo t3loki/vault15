@@ -11,7 +11,11 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="scripts/jquery-2.1.0.js"></script>
+    <script src="scripts/scale.fix.js"></script>
+    <script src="scripts/script.js"></script>
   </head>
+  
   <body>
     <div class="wrapper">
       <header>
@@ -33,16 +37,26 @@
 
 <!-- форма для сбора интересных ссылок -->
 <div class="ba4ok">
+  
+  <!-- form -->
   <form>
   	<label><strong>Description:</strong></label>
-  	 <input type="text" name="link_desc" id="link_desc"><br/>
+  	 <input type="text" name="link_desc" id="linkDesc"><br/>
 	
 	<label><strong>Link:</strong></label> 
 	<input type="text" name="link" id="linkPath">
 
-	<input type="submit" name="submit" value="Добавить" onclick="addLink()">
+	<input type="submit" name="submit" value="Добавить" id="pushLink">
   </form>
+<!-- end form -->
+
+<input type="text" id="linkEater" placeholder="your awesome link goes here...">
+</input> 
+  
+  <button type="button" id="superBtn" value="super button">click me</button>
 </div>
+
+<p class="linksBox"></p>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
@@ -79,9 +93,23 @@ $ git checkout gh-pages
       </footer>
     </div>
     
-    <script src="scripts/scale.fix.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  
+<!--  <script type="text/javascript">
+  $(document).ready(function(){
+    $('section').prepend('<h1>I\'m a paragraph!</h1>');
+});  
+</script>  -->
+
+<script type="text/javascript">
+  $('#superBtn').click(function(){
+      $grabLinkEater = $('#linkEater').val();
+      //$('section').prepend('<h1>I\'m a paragraph!</h1>')
+       $('section').prepend($grabLinkEater + "<br/>");
+  });
+</script>
+
+    
+    
     
   </body>
 </html>
