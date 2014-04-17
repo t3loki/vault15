@@ -2,9 +2,10 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -252,4 +253,14 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+.ba4ok{
+  width: 400px;
+  clear: both;
+}
+
+.ba4ok input {
+  width: 100%;
+  clear: both;
 }
