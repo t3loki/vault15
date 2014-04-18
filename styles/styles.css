@@ -5,7 +5,7 @@ body {
   font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black;
   font-weight: 300;
-
+  background-color: #7B8A90;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,16 +34,31 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  /*color:#39c;*/
+  color: #FFCC00;
   font-weight:400;
   text-decoration:none;
 }
 
+a:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:active{
+  color: #ffffff;
+  text-decoration: none;
+}
+
 a small {
   font-size:11px;
-  color:#777;
+  color:#ffffff;
   margin-top:-0.6em;
   display:block;
+}
+
+a small:hover {
+  color:#ffffff;
 }
 
 .wrapper {
@@ -182,7 +197,9 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+  
 }
+
 
 @media print, screen and (max-width: 960px) {
   
@@ -247,20 +264,26 @@ footer {
   }
 }
 
-@media print {
+/*@media print {
   body {
     padding:0.4in;
     font-size:12pt;
     color:#444;
   }
-}
+} */
 
-.ba4ok{
-  width: 400px;
-  clear: both;
-}
+.circular img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url('/images/dan.jpg');
+  
+  }
 
-.ba4ok input {
-  width: 100%;
-  clear: both;
+img {
+
 }
+  
+
