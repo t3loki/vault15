@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Vault15 by t3loki</title>
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="scripts/jquery-2.1.0.js"></script>
+    <script src="scripts/scale.fix.js"></script>
+    <script src="scripts/script.js"></script>
+
+  </head>
+  
+  <body>
+    <div class="wrapper"> 
+      <header>
+        <h1><a href="./index.html">Vault15</a></h1>
+        <p>web experiments</p>
+        <p class="view"><a href="https://github.com/t3loki/vault15">Project on GitHub<small>t3loki/vault15</small></a></p>
+        <ul>
+          <li><a href="./cv.html">Read<strong>CV</strong></a></li>
+          <li><a href="#">Check out<strong>Portfolio</strong></a></li>
+          <!-- <li><a href="https://github.com/t3loki/vault15">View On <strong>GitHub</strong></a></li>  -->
+        </ul>
+        <div class="circular">
+          <img src="./images/dan.jpg">
+        </div>
+      </header>
+      
+      <section>
+        <h1 style="color: white;">Hi! I'm Dan. This is my home page/blog</h1>
+        <input type="text" id="linkEater" placeholder="type something...">
+        </input> 
+        <button style="margin-left: 5px;" type="button" id="superBtn" class="btn btn-default" value="super button">add</button>
+      </section>
+      
+    <footer>
+        <p>This project is maintained by<br/> 
+        Danil Jouravlev - <a href="https://github.com/t3loki">t3loki</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+  </div>
+
+<script type="text/javascript">
+  $('#superBtn').click(function(){
+      $grabLinkEater = $('#linkEater').val();
+      //$('section').prepend('<h1>I\'m a paragraph!</h1>')
+       $('section').prepend('<p style="background-color: #80E6B2; padding: 3px 3px; font-weight: bold;">' + $grabLinkEater + '</p>');
+  });
+</script>
+
+  </body>
+</html>
