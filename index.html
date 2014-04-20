@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Vault15 by t3loki</title>
 
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/pygment_trac.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pygment_trac.css">
+  
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,29 +22,64 @@
   <body>
     <div class="wrapper"> 
       <header>
-        <h1><a href="./index.html">Vault15</a></h1>
+        
+        <h1>
+           <kbd style="padding: 10px 10px;">
+              <a href="./index.html">Vault15</a>
+           </kbd>
+        </h1>
+        
         <p>web experiments</p>
         <p class="view"><a href="https://github.com/t3loki/vault15">Project on GitHub<small>t3loki/vault15</small></a></p>
-        <ul>
-          <li><a href="./cv.html">Read<strong>CV</strong></a></li>
-          <li><a href="#">Check out<strong>Portfolio</strong></a></li>
-          <!-- <li><a href="https://github.com/t3loki/vault15">View On <strong>GitHub</strong></a></li>  -->
-        </ul>
+        
+         <ul>
+          <li><a href="./cv.html"><strong>CV</strong></a></li>
+          <li><a href="#"><strong>Portfolio</strong></a></li>
+          <li><a href="./lab.html"><strong>Lab</strong></a></li>  
+        </ul> 
+
         <div class="circular">
-          <img src="./images/dan.jpg">
+          <img src="./img/dan.jpg">
         </div>
       </header>
       
       <section>
-        <h1 style="color: white;">Hi! I'm Dan. This is my home page/blog</h1>
+        
+        <h1 style="color: white;">./Welcome</h1>
         <input type="text" id="linkEater" placeholder="type something...">
         </input> 
+        
         <button style="margin-left: 5px;" type="button" id="superBtn" class="btn btn-default" value="super button">add</button>
+        <p></p>
+      
+        <h1>01. Sublime Text ? Could be better</h1>
+        <h3>Tab Triggered Auto-Complete</h3>
+        <p>One of the greatest features of Sublime Text is it’s tab controlled auto-complete, customizable by snippets (more on snippets in the next step). To try it out, create a new file and type in “html” (without quotes) and with no trailing space, hit tab. You’ll see that it instantly sets you up a bare-bones html template, and places your cursor in between the title tags.</p>
+
+        <h3>Multi-Select</h3>
+        <p>Sublime Text 2 comes equipped with amazing multi-selection abilities. Consider a scenario in which you need to rename all occurrences of a word – perhaps you change the element class name in your CSS. Highlight a word, and hit <kbd>CMD + CTRL + G</kbd>. Voila – all occurrences of that word are now highlighted, and if you begin typing, you’ll see them all simultaneously being replaced.
+        <a href="http://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html">more to read</a></p>
+
+        <h3>Disable auto tag completion</h3>
+        <p>Go to Sublime Text -> Preferences -> Settings User -> add the line<br/> "auto_close_tags": false
+        </p>
+
+        <p>All the above information is taken from <a href="http://www.nerdi.net/blog/2012/02/05/customize-your-sublime-text-2-configuration-for-awesome-coding/#step2">here</a>. Thanks to Alexander Zizzo.</p>
+
       </section>
+
+
       
     <footer>
         <p>This project is maintained by<br/> 
         Danil Jouravlev - <a href="https://github.com/t3loki">t3loki</a></p>
+
+        <p>I'm also reachable via<br/>
+           <a target="_blank" href="https://www.linkedin.com/pub/danil-jouravlev/5b/b21/761">LinkedIn</a>
+           <a href="#">Twitter @t3loki</a>
+           <a target="_blank" href="http://www.facebook.com/danil.jouravlev.3/">Facebook</a>
+        </p>
+
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     </footer>
   </div>
