@@ -1,0 +1,30 @@
+#pl1res, #pl2res {
+	font-size: 5em;
+	/*border: 1px solid black;
+	border-radius: 5px;*/
+}
+
+.jumbotron{
+	background: url("./dicebg.png") no-repeat center center;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+a{
+	color: #FC0;
+}
+
+a:active{
+   color: white;
+   text-decoration: none;
+}
+
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+
