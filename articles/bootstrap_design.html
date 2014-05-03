@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <title>Design tips to improve Bootstrap site</title>
+<style>
+	html {
+		margin: 30px auto;
+		width: 750px;
+
+	}
+
+	p{
+		font-size: 1.2em;
+	}
+</style>
+</head>
+<body>
+<h1 class="success" style="text-align: center;">Design tips to improve Bootstrap site</h1>
+<h2>1. Limit lines of text</h2>
+<p>When it comes to typography, a common rule of thumb is to limit lines of text (i.e., the measure) to 50-75 characters for improved readability. To put it in Bootstrap terms, your text should use 6 columns at most, given the default 14 pixel font size. Using all 12 columns for long-form text results in 170-character lines, well over the optimal range.
+
+Here, I’ve reduced the text to 8 columns while bumping the font size up to 20 pixels (<a href="http://jsbin.com/jucay/1">demo</a>)</p>
+
+<h2>2. Use plenty of whitespace</h2>
+<p>Adding whitespace to your sections, paragraphs, etc. can dramatically improve the readability of your site. By default, Bootstrap often doesn’t provide sufficient margins and paddings. Not that I blame Bootstrap — it can’t know in advance how your content and components are going to fit together, which is what determines the effective use of whitespace.
+
+In my example, I’ve increased the paragraph top and bottom margins and line height to 1.6em (<a href="http://jsbin.com/jucay/2">demo</a>)</p>
+
+<h2>3. Less is more…</h2>
+
+<p>When it comes to interface design, less is more. You want to bring the content to the forefront. Use only a few fonts, a few colors in your palette, and even as few Bootstrap components as necessary. The slighter the differences are, the more likely it is that you should eliminate them by combining styles.
+
+I noticed slight discrepancies with the font size, weight, and color between the main paragraph text, the lead, the button text, and the navbar brand in my example. I’ve made them consistent here (<a href="http://jsbin.com/jucay/3">demo</a>)</p>
+
+<h2>4. …Except when it comes to images</h2>
+
+<p>There is one exception to the “less is more” maxim: when it comes to images, bigger is better. For example, if you have a jumbotron at the top of your page, consider replacing it with a full-width background image or pattern. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Scaling_background_images#cover">background-size:cover</a>  is your friend here.</p>
+
+<p>In my example, I simply darkened a photo by 75% to contrast the white text and set it as the background image. <a href="http://jsbin.com/jucay/4">demo</a> 
+</p>
+
+<h2>5. Use a theme</h2>
+<p>Last but not least, consider using a Bootswatch theme to give your site a fresh look. This gives your Bootstrap components a distinct style with minimal effort. Unless you’re confident in what you’re doing, stick with a more neutral theme like <a href="http://bootswatch.com/lumen/">Lumen</a>, <a href="http://bootswatch.com/darkly/">Darkly</a>, or <a href="http://bootswatch.com/yeti/">Yeti</a>.</p>
+<p>Here, I’ve replaced the default Bootstrap stylesheet with Yeti, giving the page’s button and typography a new spin. (<a href="http://jsbin.com/jucay/10">demo</a>)</p>
+
+<h2>Putting it all together</h2>
+<p>Here’s an animation that shows the progression. Granted this is a basic example, but these same principles can be applied to any website. Keep them in mind and even if you’re not a design guru, hopefully they help you take your Bootstrap-based site to the next level.</p>
+
+
+
+
+
+
+</body>
+</html>
