@@ -7,55 +7,91 @@
 
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
-    <!-- <link rel="stylesheet" href="../../css/styles.css"> -->
   
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   
   <body>
+    <!-- logo -->
     <div class="container">
       <h1>
         <kbd style="padding: 10px 10px;">
            <a href="../../index.html">Vault15</a>
          </kbd>
        </h1>
-    </div>
+    </div><!-- logo -->
 
+  <!-- header -->
   <div class="container" style="margin-top: 30px;">
     <section class="jumbotron">
             <h1>Dice game</h1>      
     </section>
-  </div>
+  </div> <!-- header -->
 
+  <!-- player zone -->
   <div class="container"
     <div class="row">
       
       <!-- playground -->
-      <div class="col-md-6">
+      <div class="col-sm-12 col-md-12">
         
-        <!-- player1 zone -->
-        <div class="col-md-6">
+        <!-- player 1 zone -->
+        <div class="col-sm-4 col-md-4">
           <h3>Player 1</h3>
-          <button class="btn btn-danger" id="pl1btn" onclick="play1go(this)">Play</button>
-          <p id="pl1res"></p>
+          <button class="btn btn-danger" id="pl1btn" onclick="play1go(this)">Play</button><br>
+          <kbd id="pl1res"></kbd>
+          <p class="text-warning" id="pl1resInfo"></p>
         </div>
 
-        <!-- player2 zone -->
-        <div class="col-md-6">
+        <!-- player 2 zone -->
+        <div class="col-sm-4 col-md-4">
           <h3>Player 2</h3>
           <button class="btn btn-danger" id="pl2btn" onclick="play2go(this)">Play</button>
           <p id="pl2res"></p>
         </div>
+
+        <!-- table with RESULTS, three rows = three rounds + total score  
+        Player 1's total score > Player 2 total score => player 1 wins,
+        the same for Player 2. If player 1 score = player 2 score => DRAW-->
+        <div class="col-sm-4 col-md-4">
+          <table class="table table-striped">
+            <caption>Results</caption>
+            <thead>
+              <tr>
+                <td></td>
+                <td><b>Player 1</b></td>
+                <td><b>Player 2</b></td>    
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Round 1</td>
+                <td id="pl1rnd1score"></td>
+                <td id="pl2rnd1score"></td>
+              </tr>
+              <tr>
+                <td>Round 2</td>
+                <td id="pl1rnd2score"></td>
+                <td id="pl2rnd2score"></td> 
+              </tr>
+              <tr>
+                <td>Round 3</td>
+                <td id="pl1rnd3score"></td>
+                <td id="pl2rnd3score"></td>
+              </tr>
+              <tr>
+                <td><b>Total score:</b></td>
+                <td id="pl1TotalScore"></td>
+                <td id="pl2TotalScore"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
          
       </div> <!-- playground -->
 
-      <!-- results -->
-      <!-- <div class="col-md-6 well">
-        
-        <p>Dice have been used since before recorded history, and it is uncertain where they originated. The oldest known dice were excavated as part of a 5000-year-old backgammon set at the Burnt City, an archeological site in south-eastern Iran.[3] Other excavations from ancient tombs in the Indus Valley civilization indicate a South Asian origin.[4] Dicing is mentioned as an Indian game in the Rigveda, Atharvaveda and Buddha games list.[5] It also plays a critical role in the great Hindu epic Mahabharata, where Yudhisthira plays a game of dice against the Kauravas for the northern kingdom of Hastinapura, which becomes the trigger for a war.[citation needed] There are several biblical references to "casting lots", as in Psalm 22, indicating that dicing (or a related activity) was commonplace when the psalm was composed. Knucklebones was a skill game played by women and children; a derivative form had the four sides of the bone receive different values and count as modern dice.[citation needed] Gambling with two or three dice was a very popular form of amusement in Greece, especially with the upper classes, and a frequent accompaniment to symposia</p>
-      </div> -->
-
-    </div>
+    </div> <!-- player zone -->
   </div>
 
   <script src="./script.js"></script>
