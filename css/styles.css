@@ -290,15 +290,15 @@ header ul li a strong:hover{
 #leftmenu a{
   padding: 4px;
   width: 100px;
-  background: #F3CC00;
-  color: black;
+  background: #333333;
+  color: #FFC515;
   font-weight: bold;
-  border: 2px solid black;
+  border: 2px solid #FFC515;
 }
 
 #leftmenu a:hover{
   padding: 4px;
-  background: white;
+  background: #FFC515;
   color: black;
   font-weight: bold;
 }
@@ -333,7 +333,13 @@ header ul li a strong:hover{
             margin:auto; 
             min-width:50%;
             min-height:50%;
-            opacity: 0.85;    
+            opacity: 0.91;    
         }
+  
+  /* logo */
+  #logo{
+    padding: 10px 10px; 
+    border: 3px solid #FFC515;
+  }
   
 
