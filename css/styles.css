@@ -27,9 +27,9 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
+/*h2 {
   color:#393939;
-}
+}*/
 
 h3, h4, h5, h6 {
   /*color:#494949;*/
@@ -288,16 +288,19 @@ header ul li a strong:hover{
 }
 
 #leftmenu a{
-  padding: 6px;
+  padding: 4px;
   width: 100px;
-  background: #333333;
-  color: #FFCC00;
+  background: #F3CC00;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
 }
 
 #leftmenu a:hover{
-  padding: 6px;
+  padding: 4px;
   background: white;
   color: black;
+  font-weight: bold;
 }
 
 #wrapper-interests{
