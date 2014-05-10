@@ -5,15 +5,16 @@ body {
   font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   font-weight: 300;
-  background-color: #7B8A90;
+  /*background-color: #7B8A90;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222; 
+  /*color:#222;*/ 
+  color: white;
   margin:0 0 20px;
 }
 
-p, ul, ol, table, pre, dl {
+p, ol, table, pre, dl {
   margin:0 0 20px;
 }
 
@@ -115,7 +116,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:280px;
   float:left;
   position:fixed;
 }
@@ -124,40 +125,24 @@ header ul {
   list-style:none;
   height:40px;
   padding:0;
-  
-  /*background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd)); 
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);*/
-  background: #333333;
-
-
-  
-  border-radius: 5px;
-  /*border:1px solid #d2d2d2; */
-  /*box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;*/
   width:266px;
 }
 
 header li {
   width:89px;
   float:left;
-  border-right:1px solid #808080;
+  /*border-right:1px solid #808080;*/
   height:40px;
 }
 
 
 header ul a {
-  font-size:11px;
-  /*color:#999;*/
-  display:block;
-  text-align:center;
+  display: block;
+  text-align: center;
   padding-top:8px;
-  height:40px;
   border-radius: 5px;
+  background: white;
+  color: black;
 }
 
 strong {
@@ -287,6 +272,8 @@ footer {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   background: url('/images/dan.jpg');
+  margin-top: 100px;
+  margin-bottom: 30px;
   }
 
 header ul li a strong:hover{
@@ -295,7 +282,55 @@ header ul li a strong:hover{
   text-shadow: 1px 2px 6px #FFCC3A;
 }
 
+/* leftmenu positioning*/
+#leftmenu{
+  padding-left: 50px;
+}
 
+#leftmenu a{
+  padding: 6px;
+  width: 100px;
+  background: #333333;
+  color: #FFCC00;
+}
 
+#leftmenu a:hover{
+  padding: 6px;
+  background: white;
+  color: black;
+}
+
+#wrapper-interests{
+  border-left: 15px solid white;
+  
+}
+
+#wrapper-logos{
+  margin-left: 0px; 
+  /*background: #dcdcdc;*/
+  padding: 15px;
+  border-bottom: 15px solid white;
+}
+
+/* img */
+        #bg {
+            position:fixed; 
+            top:-50%; 
+            left:-50%; 
+            width:200%; 
+            height:200%;
+            z-index: -1;
+        }
+        #bg img {
+            position:absolute; 
+            top:0; 
+            left:0; 
+            right:0; 
+            bottom:0; 
+            margin:auto; 
+            min-width:50%;
+            min-height:50%;
+            opacity: 0.85;    
+        }
   
 
