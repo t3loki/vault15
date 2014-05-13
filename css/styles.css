@@ -118,7 +118,7 @@ img {
 header {
   width:280px;
   float:left;
-  position:fixed;
+  position: absolute;
 }
 
 header ul {
@@ -304,15 +304,17 @@ header ul li a strong:hover{
 }
 
 #wrapper-interests{
-  border-left: 15px solid white;
-  
+  /*border: 10px solid white;*/
+  /*border-radius: 1em;*/
+  /*background: #FFC515;*/
+  opacity: 0.4;
+  padding: 7px;
 }
 
 #wrapper-logos{
-  margin-left: 0px; 
-  /*background: #dcdcdc;*/
-  padding: 15px;
-  border-bottom: 15px solid white;
+  margin: 10px;
+  padding: 10px;
+  background: white;
 }
 
 /* img */
