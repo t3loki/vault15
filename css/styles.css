@@ -304,17 +304,21 @@ header ul li a strong:hover{
 }
 
 #wrapper-interests{
-  /*border: 10px solid white;*/
-  /*border-radius: 1em;*/
-  /*background: #FFC515;*/
-  opacity: 0.4;
-  padding: 7px;
+  background: #FFC515;
+  width: 262px;
+  height: 294px;
+  opacity: 0.2;
 }
 
 #wrapper-logos{
+  background: #ccc;
   margin: 10px;
+  position: relative;
+  width: 237px;
+  height: 270px;
+  top: -292px;
+  left: 3px;
   padding: 10px;
-  background: white;
 }
 
 /* img */
