@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+
+<title>Gallery</title>
+<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="./bootstrap/js/jquery.js"><\/script>')</script>
+
+<link rel="stylesheet" href="./blueimp/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="./blueimp/css/blueimp-gallery.css">
+<link rel="stylesheet" href="./blueimp/css/blueimp-gallery-indicator.css">
+<link rel="stylesheet" href="./blueimp/css/blueimp-gallery-video.css">
+
+
+
+<!-- google web fonts -->
+<link rel="stylesheet" href="./css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Contrail+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Contrail+One|Exo' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Contrail+One|Exo|Fugaz+One|Nova+Round|Squada+One' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+
+<div id="bg">
+   <img src="./images/background.jpg" alt="">
+</div>
+
+<a id="shapka" href="./index.html">Vadim Kotov | Photograph</a>
+
+<p id="fancy_lines"></p>
+
+<div id="links" class="links"></div>
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+<!-- <div id="links">
+    <a href="./images/banana.jpg" title="Banana">
+        <img src="./images/banana.jpg" alt="Banana">
+    </a>
+    <a href="./images/apple.jpg" title="Apple">
+        <img src="images/apple.jpg" alt="Apple">
+    </a>
+    <a href="./images/orange.jpg" title="Orange">
+        <img src="images/orange.jpg" alt="Orange">
+    </a>
+</div>  -->
+
+<div id="fotki">
+<!-- 1st row -->
+    <a data-href="./images/banana.jpg" title="Banana" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/banana.jpg" width="130px" height="130px" alt="banana">
+    </a>
+    <a data-href="./images/apple.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/apple.jpg" width="130px" height="130px" alt="apple">
+    </a>
+    <a data-href="./images/tomato.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/tomato.jpg" width="130px" height="130px" alt="tomato">
+    </a>
+    <a data-href="./images/onion.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/onion.jpg" width="130px" height="130px" alt="onion">
+    </a>
+    <a data-href="./images/tomato.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/tomato.jpg" width="130px" height="130px" alt="tomato">
+    </a>
+    <a data-href="./images/onion.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/onion.jpg" width="130px" height="130px" alt="onion">
+    </a><br/>
+<!-- 2nd row -->
+    <a data-href="./images/banana.jpg" title="Banana" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/banana.jpg" width="130px" height="130px" alt="banana">
+    </a>
+    <a data-href="./images/apple.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/apple.jpg" width="130px" height="130px" alt="apple">
+    </a>
+    <a data-href="./images/tomato.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/tomato.jpg" width="130px" height="130px" alt="tomato">
+    </a>
+    <a data-href="./images/onion.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/onion.jpg" width="130px" height="130px" alt="onion">
+    </a>
+    <a data-href="./images/tomato.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/tomato.jpg" width="130px" height="130px" alt="tomato">
+    </a>
+    <a data-href="./images/onion.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/onion.jpg" width="130px" height="130px" alt="onion">
+    </a><br/>
+<!-- 3rd row -->
+    <a data-href="./images/banana.jpg" title="Banana" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/banana.jpg" width="130px" height="130px" alt="banana">
+    </a>
+    <a data-href="./images/apple.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/apple.jpg" width="130px" height="130px" alt="apple">
+    </a>
+    <a data-href="./images/tomato.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/tomato.jpg" width="130px" height="130px" alt="tomato">
+    </a>
+    <a data-href="./images/onion.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/onion.jpg" width="130px" height="130px" alt="onion">
+    </a>
+    <a data-href="./images/tomato.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/tomato.jpg" width="130px" height="130px" alt="tomato">
+    </a>
+    <a data-href="./images/onion.jpg" title="Apple" data-gallery="#blueimp-gallery-fruits">
+        <img src="./images/onion.jpg" width="130px" height="130px" alt="onion">
+    </a>
+    
+</div> <!-- /div fotki -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p id="copyright">2013&nbsp;&copy;&nbsp;D.Jouravlev</p>
+	   
+
+<div id="bottombar">
+	<a href="./index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="./gallery.html"><span style="color: #2ab7da;">Gallery</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<a href="./contact.html">Contact</a>
+</div>
+
+
+
+<!-- scripts -->
+<script src="./blueimp/js/blueimp-helper.js"></script>
+<script src="./blueimp/js/blueimp-gallery.js"></script>
+<script src="./blueimp/js/blueimp-gallery-fullscreen.js"></script>
+<script src="./blueimp/js/blueimp-gallery-indicator.js"></script>
+<script src="./blueimp/js/blueimp-gallery-video.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./blueimp/js/jquery.blueimp-gallery.js"></script>
+
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+	    link = target.src ? target.parentNode : target,
+	    options = {index: link, event: event},
+	    links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+</body>
+</html>

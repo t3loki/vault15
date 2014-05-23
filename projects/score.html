@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Вторая игра Что? Где? Когда? 15/12/2012</title>
+        <link rel="stylesheet" href="../css/bootstrap2.min.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+        <script type='text/javascript' src='script.js'></script>
+        <!-- <link type="text/css" rel="stylesheet" href="../css/style.css" /> -->
+        <style>
+            body{
+    text-align: center;
+}
+
+span{
+    font-size: 500pt;
+    display: inline-table;
+    padding: 150px;
+    border:5px solid black;
+    border-radius:30px;
+    font-family: Helvetica, Arial;
+    line-height: 70%;
+    width: 310px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 10px #808080;
+    
+}
+
+/*div.centered{
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+} */
+
+#first{
+    background-color:black;
+    color:white;
+}
+
+h1,h2,h3{
+    margin: 25px;
+    font-family: Helvetica, Arial;
+}
+
+h1{
+    font-size: 3em;
+}
+
+/* img ###################*/
+#bg {
+    position:fixed; 
+    top:-50%; 
+    left:-50%; 
+    width:200%; 
+    height:200%;
+}
+#bg img {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    margin:auto; 
+    min-width:50%;
+    min-height:50%;
+    opacity: 0.15;
+}
+/* ####################### */
+
+
+        </style>
+
+        <script>
+           $(document).ready(function(){
+                $(document).keydown(function(key) {
+                switch(parseInt(key.which,10)) {
+   // left arrow button is pressed #############################                 
+                    case 37: //left arrow
+                    if ($('#first').html() < 6) {
+                        $('div>span#first').fadeTo('fast',0.50);
+                        $('div>span#first').fadeTo('fast',1.0);
+                        $('div>span#first').slideDown('fast');
+                        $('#first').html(parseInt($('#first').html()) + 1);
+                        
+                        if ($('#first').html() == 6){
+                            $('div>span#first').css('background-color','#FFD700');
+                            $('div>span#first').css('color','black');
+                            $('div>span#first').css('box-shadow','0px 0px 30px gray');
+                        }
+                        break;
+                    } else {
+                        break;
+                    }
+    //right arrow button is pressed ######################                    
+                    case 39: //right arrow
+                        if ($('#second').html() < 6) {
+                            $('div>span#second').fadeTo('fast',0.50);
+                        $('div>span#second').fadeTo('fast',1.0);
+
+                            $('#second').html(parseInt($('#second').html()) + 1);
+                            
+                            if ($('#second').html() == 6){
+                            $('div>span#second').css('background-color','#FFD700');
+                            //$('div>span#first').css('color','black');
+                        }
+                        break;
+                    } else {
+                        break;
+                      }
+     //##########################################                   
+                    default:
+                        break;
+                } // end of switch
+            }); // end of document.keydown
+                             
+                /*$('span').click(function(){
+                  $(this).html( parseInt($(this).html()) + 1);
+                }); */   
+
+            }); //end of document.ready
+                    
+                    
+                    
+                    /*added
+                    var htmlStr = $(this).html();
+                    var htmlInt = parseInt($(this).html());
+                    if (htmlInt <= 6){
+                        //$('h3').text('someone has won!');
+                        return ($('h2').text(htmlInt));
+                    }
+                    
+                    */
+
+      
+        </script>
+        
+	</head>
+	<body>
+    <p class="text-error" style="font-size: 2em; margin: 10px;">Press left or right arrow to change the score! Max is 6.</p>
+        <p>
+        	<h1>Что? Где? Когда?</h1>
+        	<h1>вторая игра</h1>
+        	<h2>15 декабря 2012<br/>Люксембург</h2>
+        </p>
+        
+       <div class="centered">
+        <span id='first'>0</span>
+        <span id='second'>0</span>
+	   </div>
+	
+        <div id="bg">
+            <!-- <img src="http://big-photography.com/wp-content/uploads/2011/11/winter-hd-wallpaper.jpg" alt=""> -->
+            <img src="http://1.bp.blogspot.com/_RoeRMs7WPYA/TQtdlcS4FKI/AAAAAAAAGoo/jY3BgQTmWtk/s1600/18.12.2010+Luxembourg+snowing+020.JPG" alt="">
+        </div>
+
+    </body>
+</html>

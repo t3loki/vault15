@@ -6,9 +6,9 @@
 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
   <title>Design tips to improve Bootstrap site</title>
 <style>
-	html {
-		margin: 30px auto;
-		width: 750px;
+	html, body {
+		margin: auto 40px;
+		/*width: 750px;*/
 
 	}
 
@@ -18,7 +18,16 @@
 </style>
 </head>
 <body>
-<h1 class="success" style="text-align: center;">Design tips to improve Bootstrap site</h1>
+
+<!-- header -->
+  <div class="container">
+    <section class="jumbotron">
+          <div>
+            <h1 style="text-align: center;">Design tips to improve Bootstrap site</h1>
+          </div>      
+    </section>
+  </div> <!-- header -->
+
 <h2>1. Limit lines of text</h2>
 <p>When it comes to typography, a common rule of thumb is to limit lines of text (i.e., the measure) to 50-75 characters for improved readability. To put it in Bootstrap terms, your text should use 6 columns at most, given the default 14 pixel font size. Using all 12 columns for long-form text results in 170-character lines, well over the optimal range.
 
