@@ -63,14 +63,26 @@
         
         <h1 style="color: white; text-align: center; border-bottom: 1px solid white;">Welcome</h1>
       
+      <h1><span style="color: #66FF33;">04.</span> Drupal Bootstrap sub-theming</h1>
+        <ol>
+          <li>Check/Install JQuery Update module</li>
+          <li>Get the <a href="https://drupal.org/project/bootstrap">base Bootstrap theme</a> & put it inside yoursite/sites/all/themes/bootstrap</li>
+          <li>Then copy the starter kit sub-theme into sites/all/themes and rename it to what you like. Then take that name and paste it as the name of the file bootstrap_subtheme.info.starterkit. So finally you will have my_custom_bootstrap_theme.info (without starterkit at the end)</li>
+          <li>Ok, now open that my_custom_bootstrap_theme.info file in an editor. Write your name in the "name" field and in the description field.</li>
+          <li>Get the latest <a href="https://github.com/twbs/bootstrap/releases">Bootstrap source files</a>. Put it inside your sub-theme folder. All the files should reside inside the folder Bootstrap, like your_sub_theme/Bootstrap/...files go here...</li>
+          <li>Get the free <a href="http://koala-app.com/">Koala less compiler</a> and add your custom sub-theme folder as a new project. Then find style.less -> click compile on the right side. The corresponding style.css is generated inside ./css of your sub-theme.</li>
+          <li>The last step :)) As you use Bootstrap source files to run your theme you have to remove comments in the .info file, in the part that starts with METHOD 1: Bootstrap Source Files, so uncomment all the Bootstrap scripts in this part and check that the line settings[bootstrap_cdn] = '' is not commented, in this way you disable the Bootstrap CDN, that you don't use anyway.</li>
+        </ol>
       
-        <h1>MAMP MySQL no connection</h1>
+      <hr>      
+      
+        <h1><span style="color: #66FF33;">03.</span> MAMP MySQL no connection</h1>
         <p><kbd>killall -9 mysqld</kbd><br>
         restart MAMP</p>
 
       <hr>
 
-        <h1>02. Show/hide hidden files on Mac</h1>
+        <h1><span style="color: #66FF33;">02.</span> Show/hide hidden files on Mac</h1>
         <h3>For Mac OS X 10.8, 10.7, 10.6</h3>
         <kbd>defaults write com.apple.Finder AppleShowAllFiles TRUE<br>
         killall Finder</kbd><br><br>
@@ -80,7 +92,7 @@
       
       <hr>
 
-        <h1>01. Sublime Text. Features </h1>
+        <h1><span style="color: #66FF33;">01.</span> Sublime Text. Features</h1>
         <h3>Tab Triggered Auto-Complete</h3>
         <p>One of the greatest features of Sublime Text is it’s tab controlled auto-complete, customizable by snippets (more on snippets in the next step). To try it out, create a new file and type in “html” (without quotes) and with no trailing space, hit tab. You’ll see that it instantly sets you up a bare-bones html template, and places your cursor in between the title tags.</p>
 
